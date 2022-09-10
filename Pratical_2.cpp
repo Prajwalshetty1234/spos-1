@@ -82,17 +82,3 @@ d[i].opc, d[i].oper);
 }
 
 
-macin.dat
-CALC    START   1000
-SUM     MACRO   **
-**      LDA     #5
-**      ADD     #10
-**      STA     2000
-**      MEND    **
-**      LDA     LENGTH
-**      COMP    ZERO
-**      JEQ     LOOP
-**      SUM     **
-LENGTH  WORD    0
-LOOP    SUM     **
-**      END     **
